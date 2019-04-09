@@ -1,0 +1,4 @@
+name = Quora Pixel
+description = Allows your site to be tracked by Quora Pixel
+package = Statistics
+core = 7.x
