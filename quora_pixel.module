@@ -49,15 +49,49 @@ $script = "
 <!-- DO NOT MODIFY -->
 <!-- Quora Pixel Code (JS Helper) -->
 <script>
+//Logic that assigns tracking number depending on hostname
+hostname=window.location.hostname;
+var trackingNum;
+switch (hostname){
+  case 'stickyminds.com':
+    trackingNum= '746affb4ed5547a3ab163817ebd7ab0c';
+    break;
+  case 'techwell.com':
+    trackingNum= 'f3498012625448e3a12d7b9925a5de0a';
+    break;
+  case 'agileconnection.com':
+    trackingNum= 'd3496907dd94438db1b2a75062f69dd1';
+    break;
+  case 'stareast.techwell.com':
+    trackingNum= '7c2b3b343f504f4098f572754edb036c';
+    break;
+  case 'starwest.techwell.com':
+    trackingNum= '7c2b3b343f504f4098f572754edb036c';
+    break;
+  case 'starcanada.techwell.com':
+    trackingNum= '7c2b3b343f504f4098f572754edb036c';
+    break;
+  case 'agiledevopswest.techwell.com':
+    trackingNum= '3f5c152fd2b6466dba8c7b770c588810';
+    break;
+  case 'agiledevopseast.techwell.com':
+    trackingNum= '3f5c152fd2b6466dba8c7b770c588810';
+    break;
+  case 'agiletestingdays.us':
+    trackingNum= 'b91ca1fbe02c45ef8be355c02412c753';
+    break;
+  case 'training.coveros.com':
+    trackingNum= '1f912785f3d845e18d9373ec0e6fae04';
+}
 !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function()
 
 {n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}
 ; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
-qp('init', '96781d2e7b7243839b32d401857dc978');
+qp('init', trackingNum);
 qp('track', 'ViewContent');
 </script>
-<noscript><img height='1' width='1' style='display:none' src='https://www.facebook.com/tr?id=$pixel_id&ev=PageView&noscript=1' /></noscript>
-<!-- End Facebook Pixel Code -->
+<noscript><img height='1' width='1' style='display:none' src=('https://q.quora.com/_/ad/%s/pixel?tag=ViewContent&noscript=1', trackingNum)/></noscript>
+<!-- End Quora Pixel Code -->
 ";
 
     $element = array(
@@ -67,3 +101,4 @@ qp('track', 'ViewContent');
     );
     drupal_add_html_head($element, 'quora_pixel');
 }
+
