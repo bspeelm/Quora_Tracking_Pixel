@@ -1,6 +1,7 @@
 <!-- DO NOT MODIFY -->
 <!-- Quora Pixel Code (JS Helper) -->
-
+pixelId = '';
+  
 !function(q,e,v,n,t,s){
   if(q.qp) return; n=q.qp=function(){
     n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);
@@ -11,7 +12,7 @@
 }
 
 (window, 'script', 'https://a.quora.com/qevents.js');
-qp('init', '96781d2e7b7243839b32d401857dc978');
+qp('init', pixelId);
 qp('track', 'ViewContent');
 alert("Quora Running");
 
