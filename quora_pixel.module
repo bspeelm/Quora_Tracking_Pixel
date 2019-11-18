@@ -53,35 +53,12 @@ $script = "
 hostname=window.location.hostname;
 var trackingNum;
 switch (hostname){
-  case 'stickyminds.com':
-    trackingNum= '746affb4ed5547a3ab163817ebd7ab0c';
+  case [hostname1]:
+    trackingNum= [trackingNumber1];
     break;
-  case 'techwell.com':
-    trackingNum= 'f3498012625448e3a12d7b9925a5de0a';
-    break;
-  case 'agileconnection.com':
-    trackingNum= 'd3496907dd94438db1b2a75062f69dd1';
-    break;
-  case 'stareast.techwell.com':
-    trackingNum= '7c2b3b343f504f4098f572754edb036c';
-    break;
-  case 'starwest.techwell.com':
-    trackingNum= '7c2b3b343f504f4098f572754edb036c';
-    break;
-  case 'starcanada.techwell.com':
-    trackingNum= '7c2b3b343f504f4098f572754edb036c';
-    break;
-  case 'agiledevopswest.techwell.com':
-    trackingNum= '3f5c152fd2b6466dba8c7b770c588810';
-    break;
-  case 'agiledevopseast.techwell.com':
-    trackingNum= '3f5c152fd2b6466dba8c7b770c588810';
-    break;
-  case 'agiletestingdays.us':
-    trackingNum= 'b91ca1fbe02c45ef8be355c02412c753';
-    break;
-  case 'training.coveros.com':
-    trackingNum= '1f912785f3d845e18d9373ec0e6fae04';
+  case [hostname2]:
+    trackingNum= [trackingNumber2];
+  //Extend for additional hostnames
 }
 !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function()
 
