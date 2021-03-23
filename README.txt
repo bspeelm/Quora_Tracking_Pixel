@@ -2,7 +2,7 @@
 DESCRIPTION
 ===========
 
-The Quora Pixel module provides integration with the Quora Pixel,
+The Quora Pixel module provides drupal 7 integration with the Quora Pixel,
 allowing you to place a single pixel across your entire website to report
 conversions.
 
